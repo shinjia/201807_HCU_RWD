@@ -1,0 +1,11 @@
+/* ### レイアウト ### */
+#container	{width: 100%;}
+
+#content	{width: 62.5%;}
+
+#sidebar	{width: 31.25%;}
+
+/* ### 画像 ### */
+img	{max-width: 100%;
+	height: auto;}
+

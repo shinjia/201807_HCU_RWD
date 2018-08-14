@@ -1,0 +1,62 @@
+/* ### 基本的なレイアウト ### */
+
+#container	{width: 620px;}
+
+
+/* ### コンテンツ部分の記事のレイアウト ### */
+.post	{width: 300px;
+	margin-right: 20px;}
+
+.post:nth-child(even)	{margin-right: 0;}
+
+
+/* ### コンテンツ ### */
+
+/* 記事 */
+.post img	{width: 300px;}
+
+.post h2	{font-size: 22px;}
+
+.post p	{font-size: 16px;}
+
+.post .more_s	{font-size: 18px;}
+
+
+
+/* ### ヘッダー ### */
+
+/* ナビゲーションメニュー */
+#nav	{padding-top: 0;}
+
+#nav li:nth-child(2)	{float:none;
+	overflow:hidden;}
+
+
+
+/* ### ヘッダー記事 ### */
+#headerpost	{position: relative;}
+
+#headerpost img	{float: none;}
+
+#headerpost #lead	{float: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	width: auto;
+	padding: 10px 20px;
+	margin: 0;}
+
+#headerpost h2	{font-size: 20px;
+	margin: 10px 0 10px 0;}
+
+#headerpost p	{font-size: 14px;
+	margin: 0 0 20px 0;}
+
+#headerpost .date	{float: left;
+	margin: 0;}
+
+#headerpost .more	{float: right;
+	margin: -12px 15px 0px 0;}
+
+

@@ -1,0 +1,70 @@
+/* ### レイアウト ### */
+#container	{width: 100%;}
+
+#header	{margin: 0 0 15px;}
+
+#content	{width: 100%;
+	float: none;}
+
+#sidebar	{width: 100%;
+	float: none;}
+
+
+
+
+/* ### ヘッダー ### */
+
+/* ナビゲーションメニュー */
+#nav	{font-size: 12px;}
+
+#nav ul li	{width: 25%;}
+
+#nav ul li:last-child a	{border: none;}
+
+
+/* サイト名 */
+#site	{display: block;
+	text-align: center;
+	margin: 0;}
+
+#site h1	{font-size: 30px;}
+
+#site p	{font-size: 12px;}
+
+
+/* ヘッダー画像 */
+#header	{width: 100%;
+	height: 140px;
+	background-size: 100% auto;}
+
+
+
+/* ### コンテンツ ### */
+
+/* 投稿日 */
+.date	{font-size: 12px;
+	padding: 3px 5px;}
+
+.date span	{font-size: 12px;}
+
+/* タイトル */
+.post h2	{font-size: 18px;}
+
+/* サムネイル画像 */
+.post img	{max-width: 35%;
+	height: auto;}
+
+
+
+/* ### サイドバー ### */
+
+/* 広告 */
+.ad	{text-align: center;}
+
+.ad::before	{content: 'PROMOTION';
+	display: block;
+	color: #ffffff;
+	background-color: #537685;
+	margin-bottom: 10px;}
+
+

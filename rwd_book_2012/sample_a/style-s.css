@@ -1,0 +1,47 @@
+/* ### レイアウト ### */
+#container	{width: 100%;}
+
+#header	{margin: 0 0 15px;}
+
+#content	{width: 100%;
+	float: none;}
+
+#sidebar	{width: 100%;
+	float: none;}
+
+
+/* ### 画像 ### */
+img	{max-width: 100%;
+	height: auto;}
+
+
+/* ### アイコンメニューの表示位置 ### */
+
+#container	{position: relative;}
+
+#iconmenu	{position: absolute;
+	right: 8px;
+	bottom: 6px;}
+
+#footer	{padding-bottom: 60px;}
+
+#site, #iconmenu	{float: none;}
+
+
+/* ナビゲーションメニューのコンパクト化 */
+#nav li a	{width: auto;
+	padding: 5px 8px;}
+
+
+/* 記事の見出しのコンパクト化 */
+.date	{float: none;
+	font-size: 12px;
+	line-height: 2.5;
+	display: inline;
+	padding: 3px 10px;
+	border-radius: 5px;}
+
+.date span	{font-size: 12px;
+	display: inline;}
+
+#content h2	{font-size: 24px;}

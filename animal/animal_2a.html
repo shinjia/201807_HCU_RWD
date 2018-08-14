@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>動物大觀</title>
+<script>
+function change(i)
+{
+   var obj = document.getElementById('picture');
+   obj.src = 'images_b/' + i + '.jpg';
+}
+
+
+function change_default()
+{
+   var obj = document.getElementById('picture');
+   obj.src = 'images_b/cover.jpg';
+}
+</script>
+</head>
+
+<body>
+<h1>動物大觀 </h1>
+
+<p>
+ <img src="images_s/0.jpg" onmouseover="change(0);" onmouseout="change_default();" />
+ <img src="images_s/1.jpg" onmouseover="change(1);" onmouseout="change_default();" />
+ <img src="images_s/2.jpg" onmouseover="change(2);" onmouseout="change_default();" />
+ <img src="images_s/3.jpg" onmouseover="change(3);" onmouseout="change_default();" />
+ <img src="images_s/4.jpg" onmouseover="change(4);" onmouseout="change_default();" /><br />
+ <img src="images_s/5.jpg" onmouseover="change(5);" onmouseout="change_default();" />
+ <img src="images_s/6.jpg" onmouseover="change(6);" onmouseout="change_default();" />
+ <img src="images_s/7.jpg" onmouseover="change(7);" onmouseout="change_default();" />
+ <img src="images_s/8.jpg" onmouseover="change(8);" onmouseout="change_default();" />
+ <img src="images_s/9.jpg" onmouseover="change(9);" onmouseout="change_default();" />
+</p>
+
+<p><img id="picture" src="images_b/cover.jpg" /></p>
+
+</body>
+</html>
+

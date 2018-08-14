@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/949415/overriding-upload-max-filesize
+
+如何設定max_upload_size

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>動物大觀</title>
+<script>
+var idx = 0;  // 記錄目前的位置
+var total = 10;  // 總張數
+
+
+function change(i)
+{
+   var obj = document.getElementById('picture');
+   obj.src = 'images_b/' + i + '.jpg';
+   idx = i;
+}
+
+function next()
+{
+   /*
+   idx = idx + 1;  
+   if(idx>=total)
+   {
+   	  idx = 0;
+   }
+   */
+   idx = (idx + 1) % total;
+   change(idx);
+}
+
+function prev()
+{
+   /*
+   idx = idx - 1;  
+   if(idx<0)
+   {
+   	  idx = total-1;
+   }
+   */
+   idx = ((idx - 1) + total) % total;
+   change(idx);
+}
+
+
+</script>
+</head>
+
+<body>
+<h1>動物大觀 </h1>
+
+<p>
+ <img src="images_s/0.jpg" onclick="change(0);" />
+ <img src="images_s/1.jpg" onclick="change(1);" />
+ <img src="images_s/2.jpg" onclick="change(2);" />
+ <img src="images_s/3.jpg" onclick="change(3);" />
+ <img src="images_s/4.jpg" onclick="change(4);" /><br />
+ <img src="images_s/5.jpg" onclick="change(5);" />
+ <img src="images_s/6.jpg" onclick="change(6);" />
+ <img src="images_s/7.jpg" onclick="change(7);" />
+ <img src="images_s/8.jpg" onclick="change(8);" />
+ <img src="images_s/9.jpg" onclick="change(9);" />
+</p>
+
+<p><img id="picture" src="images_b/cover.jpg" /></p>
+
+<p>
+   <input type="button" value="第一張" onclick="change(0);"> 
+   <input type="button" value="上一張" onclick="prev();"> 
+   <input type="button" value="下一張" onclick="next();">
+   <input type="button" value="最後一張" onclick="change(total-1);"> 
+</p>
+
+</body>
+</html>
+

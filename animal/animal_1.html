@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>動物大觀</title>
+<script>
+function change(i)
+{
+   var obj = document.getElementById('picture');
+   obj.src = 'images_b/' + i + '.jpg';
+}
+</script>
+</head>
+
+<body>
+<h1>動物大觀 </h1>
+
+<p>
+ <img src="images_s/0.jpg" onclick="change(0);" />
+ <img src="images_s/1.jpg" onclick="change(1);" />
+ <img src="images_s/2.jpg" onclick="change(2);" />
+ <img src="images_s/3.jpg" onclick="change(3);" />
+ <img src="images_s/4.jpg" onclick="change(4);" /><br />
+ <img src="images_s/5.jpg" onclick="change(5);" />
+ <img src="images_s/6.jpg" onclick="change(6);" />
+ <img src="images_s/7.jpg" onclick="change(7);" />
+ <img src="images_s/8.jpg" onclick="change(8);" />
+ <img src="images_s/9.jpg" onclick="change(9);" />
+</p>
+
+<p><img id="picture" src="images_b/cover.jpg" /></p>
+
+</body>
+</html>
+

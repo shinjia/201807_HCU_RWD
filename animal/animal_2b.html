@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>動物大觀</title>
+<style>
+#board {
+   border: 1px solid #AA0000;
+   padding: 20px;
+   background-color: #AA9900;
+}
+</style>
+<script>
+function change(i)
+{
+   var obj = document.getElementById('picture');
+   obj.src = 'images_b/' + i + '.jpg';
+}
+
+
+function change_default()
+{
+   var obj = document.getElementById('picture');
+   obj.src = 'images_b/cover.jpg';
+}
+</script>
+</head>
+
+<body>
+<h1>動物大觀 </h1>
+
+<div id="board" onmouseout="change_default();">
+ <img src="images_s/0.jpg" onmouseover="change(0);" />
+ <img src="images_s/1.jpg" onmouseover="change(1);" />
+ <img src="images_s/2.jpg" onmouseover="change(2);" />
+ <img src="images_s/3.jpg" onmouseover="change(3);" />
+ <img src="images_s/4.jpg" onmouseover="change(4);" /><br />
+ <img src="images_s/5.jpg" onmouseover="change(5);" />
+ <img src="images_s/6.jpg" onmouseover="change(6);" />
+ <img src="images_s/7.jpg" onmouseover="change(7);" />
+ <img src="images_s/8.jpg" onmouseover="change(8);" />
+ <img src="images_s/9.jpg" onmouseover="change(9);" />
+</div>
+
+<p><img id="picture" src="images_b/cover.jpg" /></p>
+
+</body>
+</html>
+
